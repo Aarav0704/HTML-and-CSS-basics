@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Basis format for lab assignment</title>
+        <style>
+          body {font-family: Times New Roman; background-color: #f4f4f4;}
+          h1 {color:black; text-align: center;font-family:Stencil;}
+          h3 {color:black; text-align: center;}
+          section {margin: 0 auto; width: 60%; border: 2px dashed #dcdcdc; padding: 20px; background-color: #ffffff;}
+          pre {font-family: Times New Roman;}
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>ST. XAVIER'S COLLEGE</h1>
+            <h3>MAITIGHAR, KATHMANDU, NEPAL</h3>
+            <h3>Phone: 01-5321365, 01-5344636</h3>
+            <h3>Website:<a href="https://www.sxc.edu.np/">sxc.edu.np</a></h3>
+            <div style="text-align: center;">
+                <img src="logo.jpeg" class="center">
+            </div>
+            <h3>ASSIGNMENT NUMBER:1</h3>
+            <h3>ASSIGNMENT NAME</h3>
+            <table border="1" style="margin: auto;">
+                <th>Submitted By</th><th>Submitted To</th><th>Signature</th>
+                <tr><td>Name:Aarav Koirala<br>Roll No:854<br>Class:11<br>Section:H<br></td><td>Department of <br>Computer Science(+2)</td><td></td></tr>
+            </table>
+            <h3>Submission Date:11<sup> th</sup> March, 2025</h3>
+        </section>
+
+        <section>
+            <h3>Table of contents</h3>
+            <b><p>To take and display element in 1D Array</p></b>
+        </section>
+        
+        <section>
+
+            <h4>To take and display element in 1D Array</h4>
+            <em>CODE:</em>
+             <pre>
+                #include &lt;stdio.h&gt;
+
+                    int main() {
+                        // ---------------- Integer array section ----------------
+                        int n;
+                    
+                        // Get the size of the array
+                        printf("Enter the number of elements: ");
+                        scanf("%d", &n);
+                    
+                        int intArr[n];  // Renamed integer array
+                    
+                        // Take integer array input
+                        printf("Enter %d integers:\n", n);
+                        for (int i = 0; i < n; i++) {
+                            scanf("%d", &intArr[i]);
+                        }
+                    
+                        // Print integers horizontally
+                        printf("\nInteger array in horizontal form:\n");
+                        for (int i = 0; i < n; i++) {
+                            printf("%d ", intArr[i]);
+                        }
+                    
+                        // Print integers vertically
+                        printf("\n\nInteger array in vertical form:\n");
+                        for (int i = 0; i < n; i++) {
+                            printf("%d\n", intArr[i]);
+                        }
+                    
+                        // ---------------- Character array section ----------------
+                        char charArr[100];  // Renamed character array
+                    
+                        // Take string input
+                        printf("\nEnter a string: ");
+                        scanf("%s", charArr);  // Takes input without spaces
+                    
+                        // Print string horizontally
+                        printf("\nString in horizontal form:\n");
+                        printf("%s\n", charArr);
+                    
+                        // Print string vertically
+                        printf("\nString in vertical form:\n");
+                        for (int i = 0; charArr[i] != '\0'; i++) {
+                            printf("%c\n", charArr[i]);
+                        }
+                    
+                        return 0;
+                    }
+                    
+             </pre>
+            <em>OUTPUT:</em><br>
+            <p>Integer data type</p><img src="1.png" Width ="500"><br>
+            <p>Character data type</p><img src="2.png" Width ="500"><br><hr>
+        </section>
+    </body>
+</html>
